@@ -35,7 +35,7 @@
 
         <div class="bg-red-900 text-white shadow-lg mt-20 p-5 rounded">
             <h2 class="text-3xl"><strong>Creole</strong> languages arise from extreme and sudden language contact between people of diverse ethnic and cultural backgrounds. <span class="text-red-300">(Velupillai, 2015; Holm, 2000)</span></h2>
-            <p class="mt-5">Most modern creoles arose from European colonisation of the Americas along with forced importation of slaves from West Africa, as a bridge language between various communities. Examples are Haitian Creole (French), Indo-Portuguese, and Singlish. Creoles can arise in other contexts too, e.g. trade languages based on Arabic and Malay.</p>
+            <p class="mt-5">Many modern creoles arose from European colonisation of the Americas along with forced importation of slaves from West Africa, as a bridge language between various communities. Examples are Haitian Creole (French), Indo-Portuguese, and Singlish. Creoles can arise in other contexts too, e.g. trade languages based on Arabic and Malay. They are often L2s, but after a generation of contact they become established L1s for at least some speakers.</p>
         </div>
 
         <div class="bg-blue-900 text-white shadow-lg mt-5 p-5 rounded">
@@ -45,7 +45,7 @@
 
         <div class="bg-green-900 text-white shadow-lg mt-5 p-5 rounded">
             <h2 class="text-3xl">Creoles derive their lexicon from the prestige language, and their underlying structure from substrate language(s). <span class="text-green-300">(Velupillai, 2015)</span></h2>
-            <p class="mt-5">In many creoles around the world, the lexifier language is a colonial European language like French or Dutch, but Arabic, Malay, and Hindustani are also frequent lexifiers.</p>
+            <p class="mt-5">In many creoles around the world, the lexifier language is a colonial European language like French or Dutch, but Arabic, Malay, and Hindustani are also frequent lexifiers. Given the complexity of the contact situation, there can be multiple lexifiers (e.g. in the languages of Suriname both English and Dutch).</p>
         </div>
 
         <div class="mt-5">
@@ -93,7 +93,8 @@
             L.marker([3.9193, -56.0278], {icon: icon}).bindTooltip("<p><strong>Sranan Tongo</strong> (English, Dutch)</p><p>415,700 speakers</p>").openTooltip().addTo(map)
             L.marker([16.25, -88.833333], {icon: icon}).bindTooltip("<p><strong>Belizian Creole</strong> (English)</p><p>110,000 speakers</p>").openTooltip().addTo(map)
             L.marker([4.5, -55.5], {icon: icon}).bindTooltip("<p><strong>Saramaccan</strong> (English, Portuguese)</p><p>90,000 speakers</p>").openTooltip().addTo(map)
-            L.marker([17.271667, -62.666669], {icon: icon}).bindTooltip("<p><strong>Saint Kitts Crole</strong> (English)</p><p>39,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([17.271667, -62.666669], {icon: icon}).bindTooltip("<p><strong>Saint Kitts Creole</strong> (English)</p><p>39,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([32.35, -80.69], {icon: icon}).bindTooltip("<p><strong>Gullah</strong> (English)</p><p>a few thousand speakers</p>").openTooltip().addTo(map)
 
             var iconSvg = `<svg viewBox="-2 -2 32 32" xmlns="http://www.w3.org/2000/svg">
             <circle cx="14" cy="14" r="13" fill="#73e7b7" stroke="black" stroke-width="2"/>
@@ -117,6 +118,7 @@
                         iconSize: [15, 15]
                     } );
             L.marker([7, 122.083333], {icon: icon}).bindTooltip("<p><strong>Chavacano</strong> (Spanish)</p><p>431,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([10.1, -75.2], {icon: icon}).bindTooltip("<p><strong>Palanquero</strong> (Spanish)</p><p>2,788 speakers</p>").openTooltip().addTo(map)
 
             var iconSvg = `<svg viewBox="-2 -2 32 32" xmlns="http://www.w3.org/2000/svg">
             <circle cx="14" cy="14" r="13" fill="#DA291C" stroke="black" stroke-width="2"/>
@@ -153,13 +155,126 @@
                         iconSize: [15, 15]
                     } );
             L.marker([-30.5595, 22.9375], {icon: icon}).bindTooltip("<p><strong>Tsotsitaal</strong> (Afrikaans)</p><p>500,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([11.68, 92.77], {icon: icon}).bindTooltip("<p><strong>Andaman Creole Hindi</strong> (Hindi)</p><p>about 10,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([38, 102], {icon: icon}).bindTooltip("<p><strong>Hezhou</strong> (Mandarin Chinese)</p><p>uncertain</p>").openTooltip().addTo(map)
+            L.marker([18.34, -64.9], {icon: icon}).bindTooltip("<p><strong>Negerhollands</strong> (Dutch)</p><p>extinct</p>").openTooltip().addTo(map)
+            L.marker([-6, 147], {icon: icon}).bindTooltip("<p><strong>Unserdeutsch</strong> (German)</p><p>100+ speakers</p>").openTooltip().addTo(map)
+            L.marker([24.750556, 121.759167], {icon: icon}).bindTooltip("<p><strong>Yilan Creole Japanese</strong> (Japanese)</p><p>uncertain</p>").openTooltip().addTo(map)
         </script>
 
+        <div class="mt-20 mx-10">
+            <h2 class="text-6xl text-center">How do creoles <strong>happen</strong>?</h2>
+            <p class="mt-2 text-2xl">One of the biggest unsolved questions of creole studies is how creole languages develop. The debate is contentious. There are several schools of thought on this question, and the linguistic literature is basically a battlefield between them.</p>
+            <p class="mt-2 text-2xl">One common thread in several (but not all) theories is that creoles develop from pidgins. Pidgins are contact varieties that are L2s for only adults who use them to communicate across linguistic communities. Some argue that pidgins get <strong>creolised</strong> by the children of those adult speakers, who acquire them as an L1 and fill in the missing components for a full language by some mechanism (e.g. the innate language faculty).</p>
+            <p class="mt-2 text-2xl">One thread of theory is around the <strong>Language Bioprogram Hypothesis</strong>, which claims that L2 pidgin speakers are not able to give their kids adequate input since pidgins are too deficient to be L1s (which is true), and so children, by virtue of the innate language faculty, "fill in the gaps" and nativise the pidgin into a creole which is their L1.</p>
+        </div>
 
-        <div class="my-10">
+        <figure class="grid grid-cols-12 mx-10 mt-10">
+            <img class="col-span-2 my-auto w-64 rounded-full filter grayscale" src="assets/bickerton.jpeg" alt="">
+            <div class="col-span-10 my-auto m-6 space-y-4 rounded-lg bg-blue-900 text-white p-3 shadow-lg">
+              <blockquote>
+                <p class="text-2xl">
+                  “Creoles ... show fundamental similarities, which derive
+                  from a biological program for language. [...] The LBH <strong>[Language Bioprogram Hypothesis]</strong> claims that the innovative aspects of Creole grammar are
+                  <strong>inventions on the part of the first generation of children</strong>
+                  who have a pidgin as their linguistic input, rather than
+                  features transmitted from preexisting languages.”
+                </p>
+              </blockquote>
+              <figcaption>
+                <div class="text-blue-300">
+                  Derek Bickerton (1984)
+                </div>
+              </figcaption>
+            </div>
+        </figure>
+
+        <figure class="grid grid-cols-12 mx-10 mt-5">
+            <img class="col-span-2 my-auto w-64 rounded-full filter grayscale" src="assets/mcwhorter.jpeg" alt="">
+            <div class="col-span-10 my-auto m-6 space-y-4 rounded-lg bg-blue-900 text-white p-3 shadow-lg">
+              <blockquote>
+                <p class="text-2xl">
+                  “A natural language is a creole (i.e. born recently from a pidgin and thus emerged
+                  from broken transmission) iff it has:
+                </p>
+                <p class="text-xl ml-5">
+                  (1) <em>morphologically</em>: little or no inflectional affixation, and among unbound inflectional markers, none of contextual inflection, or of inherent inflection of
+                  the paradigmatically complex sort,<br>
+                  (2) <em>phonologically</em>: little or no distinction of monosyllabic lexical items or morphosyntactic distinctions via tone or register, and no typologically unusual
+                  proliferation of vowels, and<br>
+                  (3) <em>semantically</em>: little or no noncompositional combination of nonreduplicative
+                  derivational morphemes with roots.
+                </p>
+                <p class="text-2xl">
+                    [...] the evidence suggests that creoles are languages <strong>which emerged from
+                    structurally reduced pidgins</strong>, and bear hallmarks of that origin in their current
+                    structural makeup.”
+                </p>
+              </blockquote>
+              <figcaption>
+                <div class="text-blue-300">
+                  John McWhorter (2011)
+                </div>
+              </figcaption>
+            </div>
+        </figure>
+
+        <div class="mt-10">
+            <p class="text-2xl">The Language Bioprogram Hypothesis is largely debunked by modern creolists (obviously, the parents still have some L1 which is passed to the child! and they can be multilingual! so how is it possible that their input would be deficient?) but parts of it are still salvageable and the debate continues. Note that it is strongly supportive of the <strong class="rounded bg-blue-900 text-white px-1 shadow-lg">innatist</strong> theory of language acquisition, as it claims that creoles result from an instance of extreme <strong>poverty of the stimulus</strong> and the innate language faculty posited by Chomsky makes up for it.</p>
+            <p class="text-2xl mt-2">Other models of creole development seem to fit well with the <strong class="rounded bg-green-900 text-white px-1 shadow-lg">interactionist</strong> framework, by positing that creoles developed under the pressures of individual communicative needs leading to the adapatation of various languages in contact to those needs through interaction.</p>
+            <p class="text-2xl mt-2">They approach this from two ways: the <strong>relexification hypothesis</strong> says speakers of various languages looked to the prestige lexifier for vocabulary, overlaying on top of their L1 syntax/semantics, while the <strong>founder principle</strong> suggests that L1 speakers of the <em>lexifier</em> gradually shifted towards a creole in tandem with speakers of less-prestigous lects (e.g. not only West African slaves but also speakers of non-standard varities of the European lexifier) as they were imported into the colonies and engaged in cross-lingual interaction.</p>
+        </div>
+
+        <figure class="grid grid-cols-12 mx-10 mt-5">
+            <img class="col-span-2 w-64 my-auto rounded-full filter grayscale" src="assets/lefebvre.jpeg" alt="">
+            <div class="col-span-10 my-auto m-6 space-y-4 rounded-lg bg-green-900 text-white p-3 shadow-lg">
+              <blockquote>
+                <p class="text-2xl">
+                  “Relexification of several substratum languages on the basis of a
+                  single/major superstratum language provides the creole community with a
+                  common lexicon, hence a common language. As a mental/cognitive process,
+                  relexification is an individual process.”
+                </p>
+              </blockquote>
+              <figcaption>
+                <div class="text-green-300">
+                  Claire Lefebvre (2001)
+                </div>
+              </figcaption>
+            </div>
+        </figure>
+
+        <figure class="grid grid-cols-12 mx-10 mt-5">
+            <img class="col-span-2 w-64 my-auto rounded-full filter grayscale" src="assets/mufwene.jpeg" alt="">
+            <div class="col-span-10 my-auto m-6 space-y-4 rounded-lg bg-green-900 text-white p-3 shadow-lg">
+              <blockquote>
+                <p class="text-2xl">
+                  “In emphasizing that
+                  models of many of creoles's structural features were attested in the speech of
+                  the founder populations, the <strong>Founder Principle</strong> shows that creole genesis may
+                  be explained with the same kinds of principles generally invoked in historical
+                  linguistics and studies of language contact. It just makes sure to interpret every
+                  set of restructuring processes that resulted in a creole within the relevant ethnographic ecology.”
+                </p>
+              </blockquote>
+              <figcaption>
+                <div class="text-green-300">
+                  Salikoko S. Mufwene (1996)
+                </div>
+              </figcaption>
+            </div>
+        </figure>
+
+
+        <div class="my-20">
             <h2 class="text-3xl">References</h2>
             <ul>
+                <li>Bickerton, Derek. "The language bioprogram hypothesis." <em>Behavioral and brain sciences</em> 7.2 (1984): 173-188.</li>
                 <li>Holm, John A. <em>An Introduction to Pidgins and Creoles.</em> Cambridge: Cambridge University Press, 2000.</li>
+                <li>Lefebvre, Claire. "The interplay of relexification and levelling in creole genesis and development." <em>Language</em> 39.2 (2001): 371-408.</li>
+                <li>McWhorter, John H. <em>Defining Creole.</em> Oxford University Press, 2005.</li>
+                <li>McWhorter, John. "Tying up loose ends: The creole prototype after all." <em>Diachronica</em> 28.1 (2011): 82-117.</li>
+                <li>Mufwene, Salikoko S. "The founder principle in creole genesis." <em>Diachronica</em> 13.1 (1996): 83-134.</li>
                 <li>Michaelis, Susanne Maria, Maurer, Philippe, Haspelmath, Martin and Huber, Magnus (eds.) 2013. <em>Atlas of Pidgin and Creole Language Structures Online.</em> Leipzig: Max Planck Institute for Evolutionary Anthropology.</li>
                 <li>Velupillai, Viveka. <em>Pidgins, Creoles and Mixed Languages: An Introduction.</em> John Benjamins Publishing Company, 2015.</li>
             </ul>
