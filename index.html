@@ -62,14 +62,19 @@
             }).addTo(map)
 
             var iconSvg = `<svg viewBox="-2 -2 32 32" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="14" cy="14" r="13" fill="#FF00FF" stroke="black" stroke-width="2"/>
+            <circle cx="14" cy="14" r="13" fill="#0072bb" stroke="black" stroke-width="2"/>
             </svg>`
             var iconUrl = 'data:image/svg+xml;base64,' + btoa(iconSvg)
             var icon = L.icon( {
                         iconUrl: iconUrl,
                         iconSize: [15, 15]
                     } );
-            L.marker([19, -72.416667], {icon: icon}).bindTooltip("<p><strong>Haitian Creole</strong></p><p>9.6 million speakers</p>").openTooltip().addTo(map)
+            L.marker([19, -72.416667], {icon: icon}).bindTooltip("<p><strong>Haitian Creole</strong> (French)</p><p>9.6 million speakers</p>").openTooltip().addTo(map)
+            L.marker([-20.333333, 57.5], {icon: icon}).bindTooltip("<p><strong>Mauritian Creole</strong> (French)</p><p>600,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([7, 21], {icon: icon}).bindTooltip("<p><strong>Sango</strong> (Ngbandi, French)</p><p>4.6 million speakers</p>").openTooltip().addTo(map)
+            L.marker([5, -53], {icon: icon}).bindTooltip("<p><strong>Guianan Creole</strong> (French)</p><p>300,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([-4.75, 55.5], {icon: icon}).bindTooltip("<p><strong>Seychellois Creole</strong> (French)</p><p>73,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([15.4150, 61.3710], {icon: icon}).bindTooltip("<p><strong>Dominician Creole French</strong> (French)</p><p>42,600 speakers</p>").openTooltip().addTo(map)
 
             var iconSvg = `<svg viewBox="-2 -2 32 32" xmlns="http://www.w3.org/2000/svg">
             <circle cx="14" cy="14" r="13" fill="#7f1e1d" stroke="black" stroke-width="2"/>
@@ -79,9 +84,65 @@
                         iconUrl: iconUrl,
                         iconSize: [15, 15]
                     } );
-            L.marker([-9.42, 147.30], {icon: icon}).bindTooltip("<p><strong>Tok Pisin</strong></p><p>4 million speakers</p>").openTooltip().addTo(map)
-            L.marker([18.017874, -76.809906], {icon: icon}).bindTooltip("<p><strong>Jamaican Creole</strong></p><p>3.2 million speakers</p>").openTooltip().addTo(map)
-            L.marker([5.44, 9.80], {icon: icon}).bindTooltip("<p><strong>Cameroonian Pidgin English</strong></p><p>2 million speakers</p>").openTooltip().addTo(map)
+            L.marker([-9.42, 147.30], {icon: icon}).bindTooltip("<p><strong>Tok Pisin</strong> (English)</p><p>4 million speakers</p>").openTooltip().addTo(map)
+            L.marker([18.017874, -76.809906], {icon: icon}).bindTooltip("<p><strong>Jamaican Creole</strong> (English)</p><p>3.2 million speakers</p>").openTooltip().addTo(map)
+            L.marker([1.33, 101.70], {icon: icon}).bindTooltip("<p><strong>Singlish</strong> (English)</p><p>about 4 million speakers</p>").openTooltip().addTo(map)
+            L.marker([5.44, 9.80], {icon: icon}).bindTooltip("<p><strong>Cameroonian Pidgin English</strong> (English)</p><p>2 million speakers</p>").openTooltip().addTo(map)
+            L.marker([21.5, -158], {icon: icon}).bindTooltip("<p><strong>Hawaiian Creole English</strong> (English)</p><p>700,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([8.4606, -11.7799], {icon: icon}).bindTooltip("<p><strong>Krio</strong> (English)</p><p>692,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([3.9193, -56.0278], {icon: icon}).bindTooltip("<p><strong>Sranan Tongo</strong> (English, Dutch)</p><p>415,700 speakers</p>").openTooltip().addTo(map)
+            L.marker([16.25, -88.833333], {icon: icon}).bindTooltip("<p><strong>Belizian Creole</strong> (English)</p><p>110,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([4.5, -55.5], {icon: icon}).bindTooltip("<p><strong>Saramaccan</strong> (English, Portuguese)</p><p>90,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([17.271667, -62.666669], {icon: icon}).bindTooltip("<p><strong>Saint Kitts Crole</strong> (English)</p><p>39,000 speakers</p>").openTooltip().addTo(map)
+
+            var iconSvg = `<svg viewBox="-2 -2 32 32" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="13" fill="#73e7b7" stroke="black" stroke-width="2"/>
+            </svg>`
+            var iconUrl = 'data:image/svg+xml;base64,' + btoa(iconSvg)
+            var icon = L.icon( {
+                        iconUrl: iconUrl,
+                        iconSize: [15, 15]
+                    } );
+            L.marker([16.5388, -23.0418], {icon: icon}).bindTooltip("<p><strong>Cape Verdean Creole</strong> (Portuguese)</p><p>871,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([12, -15], {icon: icon}).bindTooltip("<p><strong>Guinea-Bissau Creole</strong> (Portuguese)</p><p>500,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([12.25, -69], {icon: icon}).bindTooltip("<p><strong>Papiamento</strong> (Portuguese, Spanish)</p><p>321,300 speakers</p>").openTooltip().addTo(map)
+            L.marker([0.1864, 6.6131], {icon: icon}).bindTooltip("<p><strong>Forro Creole</strong> (Portuguese)</p><p>69,899 speakers</p>").openTooltip().addTo(map)
+
+            var iconSvg = `<svg viewBox="-2 -2 32 32" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="13" fill="#F9D73D" stroke="black" stroke-width="2"/>
+            </svg>`
+            var iconUrl = 'data:image/svg+xml;base64,' + btoa(iconSvg)
+            var icon = L.icon( {
+                        iconUrl: iconUrl,
+                        iconSize: [15, 15]
+                    } );
+            L.marker([7, 122.083333], {icon: icon}).bindTooltip("<p><strong>Chavacano</strong> (Spanish)</p><p>431,000 speakers</p>").openTooltip().addTo(map)
+
+            var iconSvg = `<svg viewBox="-2 -2 32 32" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="13" fill="#DA291C" stroke="black" stroke-width="2"/>
+            </svg>`
+            var iconUrl = 'data:image/svg+xml;base64,' + btoa(iconSvg)
+            var icon = L.icon( {
+                        iconUrl: iconUrl,
+                        iconSize: [15, 15]
+                    } );
+            L.marker([-6.2, 106.816667], {icon: icon}).bindTooltip("<p><strong>Betawi Malay</strong> (Malay)</p><p>5 million speakers</p>").openTooltip().addTo(map)
+            L.marker([-5.133056, 119.413611], {icon: icon}).bindTooltip("<p><strong>Makassar Malay</strong> (Malay)</p><p>1.9 million speakers</p>").openTooltip().addTo(map)
+            L.marker([-3.638056, 128.117222], {icon: icon}).bindTooltip("<p><strong>Ambonese Malay</strong> (Malay)</p><p>1.4 million speakers</p>").openTooltip().addTo(map)
+            L.marker([0.783333, 127.366667], {icon: icon}).bindTooltip("<p><strong>North Moluccan Malay</strong> (Malay)</p><p>700,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([1.5, 124.833333], {icon: icon}).bindTooltip("<p><strong>Manado Malay</strong> (Malay)</p><p>850,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([7.8731, 80.7718], {icon: icon}).bindTooltip("<p><strong>Sri Lankan Creole Malay</strong> (Malay)</p><p>46,000 speakers</p>").openTooltip().addTo(map)
+
+            var iconSvg = `<svg viewBox="-2 -2 32 32" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="13" fill="#006C32" stroke="black" stroke-width="2"/>
+            </svg>`
+            var iconUrl = 'data:image/svg+xml;base64,' + btoa(iconSvg)
+            var icon = L.icon( {
+                        iconUrl: iconUrl,
+                        iconSize: [15, 15]
+                    } );
+            L.marker([4.8594, 31.5713], {icon: icon}).bindTooltip("<p><strong>Juba Arabic</strong> (Arabic)</p><p>800,000 speakers</p>").openTooltip().addTo(map)
+            L.marker([0.666667, 32.083333], {icon: icon}).bindTooltip("<p><strong>Nubi</strong> (Arabic)</p><p>42,000 speakers</p>").openTooltip().addTo(map)
 
             var iconSvg = `<svg viewBox="-2 -2 32 32" xmlns="http://www.w3.org/2000/svg">
             <circle cx="14" cy="14" r="13" fill="#EEE" stroke="black" stroke-width="2"/>
@@ -91,7 +152,7 @@
                         iconUrl: iconUrl,
                         iconSize: [15, 15]
                     } );
-            L.marker([7, 21], {icon: icon}).bindTooltip("<p><strong>Sango</strong></p><p>4.6 million speakers</p>").openTooltip().addTo(map)
+            L.marker([-30.5595, 22.9375], {icon: icon}).bindTooltip("<p><strong>Tsotsitaal</strong> (Afrikaans)</p><p>500,000 speakers</p>").openTooltip().addTo(map)
         </script>
 
 
@@ -99,6 +160,7 @@
             <h2 class="text-3xl">References</h2>
             <ul>
                 <li>Holm, John A. <em>An Introduction to Pidgins and Creoles.</em> Cambridge: Cambridge University Press, 2000.</li>
+                <li>Michaelis, Susanne Maria, Maurer, Philippe, Haspelmath, Martin and Huber, Magnus (eds.) 2013. <em>Atlas of Pidgin and Creole Language Structures Online.</em> Leipzig: Max Planck Institute for Evolutionary Anthropology.</li>
                 <li>Velupillai, Viveka. <em>Pidgins, Creoles and Mixed Languages: An Introduction.</em> John Benjamins Publishing Company, 2015.</li>
             </ul>
         </div>
