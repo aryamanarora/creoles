@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <style>
+        * {
+            font-family: 'Lusitana', serif;
+        }
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container mx-auto px-4 mt-10 text-xl">
+        <h1 class="text-8xl">Creoles</h1>
+        <h2 class="text-3xl">An introduction from a language acquisition perspective</h2>
+        <h5 class="mt-3">Aryaman Arora <span class="text-gray-400"> • LING 251 • December 2, 2021</span></h5>
+
+        <div class="bg-red-900 text-white shadow-lg mt-20 p-5 rounded">
+            <h2 class="text-3xl"><strong>Creole</strong> languages arise from extreme and sudden language contact between people of diverse ethnic and cultural backgrounds. <span class="text-red-300">(Velupillai, 2015; Holm, 2000)</span></h2>
+            <p class="mt-5">Most modern creoles arose from European colonisation of the Americas along with forced importation of slaves from West Africa, as a bridge language between various communities. Examples are Haitian Creole (French), Indo-Portuguese, and Singlish. Creoles can arise in other contexts too, e.g. trade languages based on Arabic and Malay.</p>
+        </div>
+
+        <div class="bg-blue-900 text-white shadow-lg mt-5 p-5 rounded">
+            <h2 class="text-3xl">Creoles tend to be <strong>morphologically simple</strong>, generally taking typologically common features from all languages that went into their creation. <span class="text-blue-300">(Velupillai, 2015)</span></h2>
+            <p class="mt-5">It is important to note that creoles are in no way lesser than other languages, and are just as communicatively capable. The reasons for the shared tendency for analytic strategies for morphology and simple constituent syntax of creoles are not really fully agreed on.</p>
+        </div>
+
+        <div class="bg-green-900 text-white shadow-lg mt-5 p-5 rounded">
+            <h2 class="text-3xl">Creoles derive their lexicon from the prestige language, and their underlying structure from substrate language(s). <span class="text-green-300">(Velupillai, 2015)</span></h2>
+            <p class="mt-5">In many creoles around the world, the lexifier language is a colonial European language like French or Dutch, but Arabic, Malay, and Hindustani are also frequent lexifiers.</p>
+        </div>
+
+        <div class="mt-5">
+            <div class="rounded shadow" style="width: 100%; height: 500px;" id="map">
+            </div>
+        </div>
+
+        <script>
+            var map = L.map('map').setView([0, 0], 2);
+
+            L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}', {
+                attribution: 'Tiles &copy; Esri &mdash; Source: US National Park Service',
+                maxZoom: 8
+            }).addTo(map)
+
+            var iconSvg = `<svg viewBox="-2 -2 32 32" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="13" fill="#FF00FF" stroke="black" stroke-width="2"/>
+            </svg>`
+            var iconUrl = 'data:image/svg+xml;base64,' + btoa(iconSvg)
+            var icon = L.icon( {
+                        iconUrl: iconUrl,
+                        iconSize: [15, 15]
+                    } );
+            L.marker([19, -72.416667], {icon: icon}).bindTooltip("<p><strong>Haitian Creole</strong></p><p>9.6 million speakers</p>").openTooltip().addTo(map)
+
+            var iconSvg = `<svg viewBox="-2 -2 32 32" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="13" fill="#7f1e1d" stroke="black" stroke-width="2"/>
+            </svg>`
+            var iconUrl = 'data:image/svg+xml;base64,' + btoa(iconSvg)
+            var icon = L.icon( {
+                        iconUrl: iconUrl,
+                        iconSize: [15, 15]
+                    } );
+            L.marker([-9.42, 147.30], {icon: icon}).bindTooltip("<p><strong>Tok Pisin</strong></p><p>4 million speakers</p>").openTooltip().addTo(map)
+            L.marker([18.017874, -76.809906], {icon: icon}).bindTooltip("<p><strong>Jamaican Creole</strong></p><p>3.2 million speakers</p>").openTooltip().addTo(map)
+            L.marker([5.44, 9.80], {icon: icon}).bindTooltip("<p><strong>Cameroonian Pidgin English</strong></p><p>2 million speakers</p>").openTooltip().addTo(map)
+
+            var iconSvg = `<svg viewBox="-2 -2 32 32" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="13" fill="#EEE" stroke="black" stroke-width="2"/>
+            </svg>`
+            var iconUrl = 'data:image/svg+xml;base64,' + btoa(iconSvg)
+            var icon = L.icon( {
+                        iconUrl: iconUrl,
+                        iconSize: [15, 15]
+                    } );
+            L.marker([7, 21], {icon: icon}).bindTooltip("<p><strong>Sango</strong></p><p>4.6 million speakers</p>").openTooltip().addTo(map)
+        </script>
+
+
+        <div class="my-10">
+            <h2 class="text-3xl">References</h2>
+            <ul>
+                <li>Holm, John A. <em>An Introduction to Pidgins and Creoles.</em> Cambridge: Cambridge University Press, 2000.</li>
+                <li>Velupillai, Viveka. <em>Pidgins, Creoles and Mixed Languages: An Introduction.</em> John Benjamins Publishing Company, 2015.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
